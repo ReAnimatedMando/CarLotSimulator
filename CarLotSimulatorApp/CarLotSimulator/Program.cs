@@ -27,8 +27,18 @@ namespace CarLotSimulator
             car1.EngineNoise = "Vroom!";
             car1.HonkNoise = "Beep!";
             car1.IsDriveable = true;
+
+            var car2 = new Car()
+            {
+                Year = 1982,
+                Make = "DeLorean Motor Company",
+                Model = "DMC-12",
+                EngineNoise = "Vroom!",
+                HonkNoise = "Beep!",
+                IsDriveable = false
+            };
             
-            var car2 = new Car();
+            
 
             //*************BONUS*************//
 
