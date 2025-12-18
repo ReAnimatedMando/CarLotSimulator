@@ -19,8 +19,6 @@ namespace CarLotSimulator
             //Call each of the methods for each car
             var car1 = new Car();
             
-            var car3 = new Car();
-
             car1.Year = 1967;
             car1.Make = "Ford";
             car1.Model = "Shelby GT500 Mustang";
@@ -38,7 +36,7 @@ namespace CarLotSimulator
                 IsDriveable = false
             };
             
-            
+            var car3 = new Car( 1955, "Lincoln", "Futura", "Vroom!", "Beep!", true);
 
             //*************BONUS*************//
 
