@@ -18,7 +18,7 @@ namespace CarLotSimulator
             //Set the properties for each of the cars
             //Call each of the methods for each car
             var car1 = new Car();
-            var car2 = new Car();
+            
             var car3 = new Car();
 
             car1.Year = 1967;
@@ -28,7 +28,7 @@ namespace CarLotSimulator
             car1.HonkNoise = "Beep!";
             car1.IsDriveable = true;
             
-            
+            var car2 = new Car();
 
             //*************BONUS*************//
 
