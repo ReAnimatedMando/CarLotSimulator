@@ -17,26 +17,38 @@ namespace CarLotSimulator
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
+            var carLotOne = new CarLot();
+            
             var car1 = new Car();
             
             car1.Year = 1967;
             car1.Make = "Ford";
             car1.Model = "Shelby GT500 Mustang";
-            car1.EngineNoise = "Vroom!";
-            car1.HonkNoise = "Beep!";
+            car1.MakeEngineNoise( "Vroom!");
+            car1.MakeHonkNoise( "Beep!");
             car1.IsDriveable = true;
+
+            carLotOne.ParkingLot.Add(car1);
 
             var car2 = new Car()
             {
                 Year = 1982,
                 Make = "DeLorean Motor Company",
                 Model = "DMC-12",
-                EngineNoise = "Vroom!",
-                HonkNoise = "Beep!",
                 IsDriveable = false
             };
+
+            car2.MakeEngineNoise("Swoosh!");
+            car2.MakeHonkNoise("Great Scott!");
             
-            var car3 = new Car( 1955, "Lincoln", "Futura", "Vroom!", "Beep!", true);
+            carLotOne.ParkingLot.Add(car2);
+            
+            var car3 = new Car( 1955, "Lincoln", "Futura",true);
+
+            car3.MakeEngineNoise("du nu nu nu nu nu nu nu!");
+            car3.MakeHonkNoise("Batman!");
+            
+            carLotOne.ParkingLot.Add(car3);
 
             //*************BONUS*************//
 
@@ -48,6 +60,8 @@ namespace CarLotSimulator
             //It should have at least one property: a List of cars
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
+
+            carLotOne.CheckCars();
         }
     }
 }
