@@ -18,6 +18,8 @@ namespace CarLotSimulator
             //Set the properties for each of the cars
             //Call each of the methods for each car
             var carLotOne = new CarLot();
+
+            Console.WriteLine($"Cars created: {CarLot._numberOfCars}"); // wrote to console, when a car is incremented in CarLot
             
             var car1 = new Car();
             
@@ -27,6 +29,8 @@ namespace CarLotSimulator
             car1.MakeEngineNoise( "Vroom!");
             car1.MakeHonkNoise( "Beep!");
             car1.IsDriveable = true;
+            
+            Console.WriteLine($"Cars created: {CarLot._numberOfCars}"); // wrote to console, when a car is incremented in CarLot
 
             carLotOne.ParkingLot.Add(car1);
 
@@ -41,12 +45,16 @@ namespace CarLotSimulator
             car2.MakeEngineNoise("Swoosh!");
             car2.MakeHonkNoise("Great Scott!");
             
+            Console.WriteLine($"Cars created: {CarLot._numberOfCars}"); // wrote to console, when a car is incremented in CarLot
+            
             carLotOne.ParkingLot.Add(car2);
             
             var car3 = new Car( 1955, "Lincoln", "Futura",true);
 
             car3.MakeEngineNoise("du nu nu nu nu nu nu nu!");
             car3.MakeHonkNoise("Batman!");
+            
+            Console.WriteLine($"Cars created: {CarLot._numberOfCars}"); // wrote to console, when a car is incremented in CarLot
             
             carLotOne.ParkingLot.Add(car3);
 

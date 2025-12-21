@@ -25,7 +25,7 @@ public class Car
 
     public Car()
     {
-        
+        CarLot._numberOfCars++; // incremented field in constructors
     }
 
     public Car(int year, string make, string model, bool isDriveable)
@@ -34,5 +34,6 @@ public class Car
         Make = make;
         Model = model;
         IsDriveable = isDriveable;
+        CarLot._numberOfCars++; // incremented field in constructors
     }
 }
